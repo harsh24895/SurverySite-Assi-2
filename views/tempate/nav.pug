@@ -1,0 +1,19 @@
+mixin navItem(text, location)
+  a.text-white(class='hover:text-blue-300')
+  li.nav-item
+  a.nav-link(href=location)= text 
+
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand(href='#') Suvery Site
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+
+
+      
+      +navItem('Home', '/')
+      +navItem('About', '/')
+      +navItem('Login', '/')
+      +navItem('Register', '/')
