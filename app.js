@@ -14,7 +14,7 @@ var User = require('./model/user');
 
 //Use mongodb connection string
 mongoose.connect(
-    'mongodb+srv://assignment2:Pujan!001@cluster0-9kvcx.mongodb.net/test?retryWrites=true&w=majority',
+     'mongodb+srv://yash:yash12345@cluster0-m6d14.azure.mongodb.net/test?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
