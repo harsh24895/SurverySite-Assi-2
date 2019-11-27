@@ -1,0 +1,13 @@
+﻿extend layout
+block content
+  a(href='/survey' title='List Surveys') List Surveys
+  h1 Add A New Survey
+  form(method='post' action='/survey/add')
+    div
+      label Title
+      input(name='title' required placeholder='Title')
+    div
+      label Description
+      input(name='description' required placeholder='Description')
+    
+    input(type='submit' value='Add')

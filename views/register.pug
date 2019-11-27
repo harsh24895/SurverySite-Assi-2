@@ -1,0 +1,21 @@
+extends layout
+
+block content   
+    h1 Register Form
+    
+    form(method="POST")
+      .form-group
+      
+        
+        span Name
+        input.contact(type='text', name='username', value='')
+         
+    
+      .form-group
+        span password
+        input.contact(type='password', name='password', value='')
+     
+      p(style='padding-top: 15px')
+        input.submit(type='submit', name='register', value='submit')
+
+        

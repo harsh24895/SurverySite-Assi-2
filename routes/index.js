@@ -1,13 +1,24 @@
+'use strict';
 var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function (req, res) {
+    res.render('index', { title: 'Express' });
 });
 
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About survey site ' });
+/* GET Login page. */
+router.get('/login', function (req, res) {
+    res.render('login', { title: 'Express' });
 });
+
+/* GET register page. */
+router.get('/register', function (req, res) {
+    res.render('register', { title: 'Express' });
+});
+
+/* GET header page. */
+
+
 
 module.exports = router;

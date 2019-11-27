@@ -1,18 +1,32 @@
-mixin navItem(text, location)
-  a.text-white(class='hover:text-blue-300')
+mixin navlink(text , location)
   li.nav-item
-  a.nav-link(href=location)= text 
+        a.nav-link(href = location)= text
 
 
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-  a.navbar-brand(href='#') Suvery Site
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+
+  a.navbar-brand(href='/') Survey site
+   
+   
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
+         
 
-
-      
-      +navItem('Home', '/')
-      +navItem('About', '/about')
+     +navlink('Home','/')
+     +navlink('create','/survey/add')
+    
+     
+    ul.navbar-nav
+    
+     if isLoggedIn
+        +navlink('logout','/logout')
+        div Welcome #{user.username}
+     else
+        +navlink('login','/login')
+        +navlink('Register','/register')
+     
+    form.form-inline.my-2.my-lg-0
+    
       
