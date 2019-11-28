@@ -8,6 +8,7 @@ block content
     thead
         th Title
         th Description
+        
         th Edit
         th Delete
     tbody
@@ -15,10 +16,27 @@ block content
             tr
                 td #{survey.title}
                 td #{survey.description}
+            tr    
                 td
+                th Options
+                 .form-check
+                    input#exampleRadios1.form-check-input(type='radio', name='exampleRadios', value='option1', checked='')
+                    label.form-check-label(for='exampleRadios1')
+                     | Yes
+                 .form-check
+                    input#exampleRadios2.form-check-input(type='radio', name='exampleRadios', value='option2')
+                    label.form-check-label(for='exampleRadios2')
+                     | No
+                 .form-check
+                    input#exampleRadios3.form-check-input(type='radio', name='exampleRadios', value='option3')
+                    label.form-check-label(for='exampleRadios3')
+                     | None
+                
+                td 
                     a(href="/survey/edit/"+survey._id)
                         |Edit
                 td
                     a(href="/survey/delete/"+survey._id title="Delete" onclick="return confirm(\'Are you sure you want to delete this Survey ?\');")
                         |Delete                       
+                
 
