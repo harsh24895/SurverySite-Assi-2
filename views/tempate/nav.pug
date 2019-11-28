@@ -5,8 +5,8 @@ mixin navlink(text , location)
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
 
-  a.navbar-brand(href='/') Survey site
-   
+  a.navbar-brand(href='/') 
+    img(src='/images/iconlogo.png', style='width:66px;height:75px;border:0') 
    
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
@@ -14,6 +14,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
     ul.navbar-nav.mr-auto
          
 
+     
      +navlink('Home','/')
      +navlink('create','/survey/add')
     
