@@ -9,6 +9,7 @@ var session = require('express-session'); //express-session package for session
 var mongoose = require('mongoose'); //Require for mongo db connection
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+
 var User = require('./model/user');
 
 //Use mongodb connection string
