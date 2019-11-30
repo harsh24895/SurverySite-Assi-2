@@ -3,24 +3,26 @@ extends layout
 block content
 
     
-    h1 Login Form
+    h1.text-white.bg-secondary.text-center Login Form
     
-    form(method="POST")
-      .form-group
+    form.contanier.bg-info(method="POST")
+    
+      .form-group.text-center
       
         
         span Name
-        input.contact(type='text', name='username', value='')
+        input.form-control.contact(type='text', name='username', value='')
          
     
-      .form-group
-        span password
-        input.contact(type='password', name='password', value='')
+      .form-group.text-center
+        span Password
+        input.form-control.contact(type='password', name='password', value='')
         if error && error.length
             .alert.alert-danger= error
      
-      p(style='padding-top: 15px')
+      p.text-center(style='padding-top: 15px')
         input.submit(type='submit', name='Login', value='submit')
+      a.d-flex.badge-secondary.justify-content-center(href='/register') Register 
 
        
        

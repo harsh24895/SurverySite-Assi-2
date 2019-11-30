@@ -1,21 +1,19 @@
 extends layout
 
 block content   
-    h1 Register Form
+    h1.text-white.bg-secondary.text-center Register Form
     
-    form(method="POST")
-      .form-group
-      
-        
+    form.contanier.bg-info(method="POST")
+      .form-group.text-center             
         span Name
-        input.contact(type='text', name='username', value='')
-         
-    
-      .form-group
-        span password
-        input.contact(type='password', name='password', value='')
+        input.form-control.contact(type='text', name='username', value='')
+             
+      .form-group.text-center
+        span Password
+        input.form-control.contact(type='password', name='password', value='')
      
       p(style='padding-top: 15px')
         input.submit(type='submit', name='register', value='submit')
+      a.d-flex.badge-secondary.justify-content-center(href='/login') Login 
 
         
