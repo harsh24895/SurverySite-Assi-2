@@ -4,13 +4,11 @@ var SurveySchema = new mongoose.Schema(
     {
         title: String,
         description: String,
+        exampleRadios1: ["radio"],
+  exampleRadios2: ["radio"],
+        exampleRadios3: ["radio"]
     }
-    // },
-    // votes{
-    //     type: String,
-    //     require: true
-    // }
-
+  
 );
 
 module.exports = mongoose.model('Survey', SurveySchema);

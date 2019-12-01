@@ -1,4 +1,5 @@
 ﻿extends layout
+
 block content
   form(method='post' action='/survey/edit')
     input(name='id' type='hidden' value=survey.id)
@@ -9,6 +10,6 @@ block content
       label Description
       input(name='description' required placeholder='Description' value=survey.description)
     
-    input.adde(type='submit' value='Update')
+    input.add(type='submit' value='Update')
 
     
