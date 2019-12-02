@@ -1,15 +1,16 @@
 ﻿extends layout
 
 block content
+  h1 Update Page
   form(method='post' action='/survey/edit')
     input(name='id' type='hidden' value=survey.id)
-    div.add
+    div.add.text-center
       label Title
       input(name='title' required placeholder='Title' value=survey.title)
-    div.add
+    div.add.text-center
       label Description
       input(name='description' required placeholder='Description' value=survey.description)
-    
-    input.add(type='submit' value='Update')
+    div.text-center
+      input.add(type='submit' value='Update')
 
     

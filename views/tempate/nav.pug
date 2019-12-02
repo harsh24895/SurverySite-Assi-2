@@ -16,15 +16,16 @@ nav.navbar.navbar-expand-xl.navbar-dark.bg-dark
 
      
      +navlink('Home','/')
-     +navlink('create','/survey/add')
+     +navlink('C  reate','/survey/add')
      +navlink('Survey','/survey')
+     +navlink('Take survey', '/surveys')
     
      
     ul.navbar-nav
     
      if isLoggedIn
         +navlink('logout','/logout')
-        div Welcome #{user.username}
+        div.text-white Welcome #{user.username}
      else
         +navlink('login','/login')
         +navlink('Register','/register')

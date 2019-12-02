@@ -5,21 +5,16 @@ block content
     
     h1 Login Form
     
-    form(method="POST")
-      .form-group
-      
-        
+    form.contanier(method="POST")
+      .form-group.text-center
         span Name
-        input.contact(type='text', name='username', value='')
-         
-    
+        input.contact(type='text', name='username', value='')    
       .form-group
-        span password
+        span Password
         input.contact(type='password', name='password', value='')
         if error && error.length
-            .alert.alert-danger= error
-     
-      p(style='padding-top: 15px')
+          .alert.alert-danger= error
+      .form-group.text-center
         input.submit(type='submit', name='Login', value='submit')
 
     

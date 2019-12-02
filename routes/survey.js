@@ -9,11 +9,19 @@ router.get('/', function (req, res) {
     res.render('index', { title: 'Express' });
 });
 
+
 //Get all survey
 router.get('/survey', function (req, res) {
     Survey.find(function (err, survey) {
         if (err) console.log(err);
         else res.render('survey', { allSurvey: survey });
+    });
+});
+
+router.get('/surveys', function (req, res) {
+    Survey.find(function (err, survey) {
+        if (err) console.log(err);
+        else res.render('surveys', { allSurvey: survey });
     });
 });
 

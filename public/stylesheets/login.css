@@ -43,6 +43,7 @@ html {
 button, input, select, textarea, optgroup {
     /* margin: 0; */
     margin: 0px;
+    text-align: center;
 }
 
 
@@ -70,4 +71,8 @@ div.form-group:nth-child(2) > span:nth-child(1) {
     background: whitesmoke;
     padding: 15px;
     width: 145px;
+}
+
+.form-group {
+    text-align: center;
 }
