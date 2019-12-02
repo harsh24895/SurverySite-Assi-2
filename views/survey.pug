@@ -8,7 +8,7 @@ extends layout
 block content
     doctype html
 
-    title Classfied Ads
+    title Publi8c survey
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
@@ -30,4 +30,5 @@ block content
                   td #{survey.description}                                   
                   td
                     a(href="/survey/edit/"+survey._id) Edit                            
-                    a(href="/survey/delete/"+survey._id title="Delete" onClick="return confirm(\'Aru you sure want to delete it?\');") Delete 
+                    a(href="/survey/delete/"+survey._id title="Delete" onClick="return confirm(\'Aru you sure want to delete it?\');") Delete
+                  

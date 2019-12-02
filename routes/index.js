@@ -23,7 +23,6 @@ router.get('/register', function (req, res) {
     res.render('register', { title: 'Express' });
 });
 
-/* GET header page. */
 
 
 
