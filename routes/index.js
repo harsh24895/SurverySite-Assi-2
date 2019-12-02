@@ -1,3 +1,9 @@
+//- Author: Harshkumar patel-200394746 Nihar patel-200396470 Yash Nakrani-200395656 arpit patel-200393479
+//- website: https://survey-site-online.herokuapp.com/
+//- Description: this is file of index file to route the user to login and register
+
+
+
 'use strict';
 var express = require('express');
 var router = express.Router();
