@@ -1,6 +1,7 @@
 ﻿extends layout
 
 block content
+
     doctype html
     title Classfied Ads
     meta(charset='UTF-8')
@@ -12,8 +13,77 @@ block content
       height: 100%;
       font-family: "Inconsolata", sans-serif;
       }
-
+      .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/background.jpg");
+      min-height: 75%;
+      }
       .menu {
       display: none;
-      
       }
+
+
+        
+        
+        
+    // Header with image
+    header#home.bgimg.w3-display-container.w3-grayscale-min
+    
+    // Add a background color and large text to the whole page
+    .w3-sand.w3-grayscale.w3-large
+      // About Container
+      #about.w3-container
+        .w3-content(style='max-width:700px')
+          h5.w3-center.w3-padding-64
+            span.w3-tag.w3-wide ABOUT Us
+          p
+            | Our  website main agenda is to represent multiple kind of survey created by register user to collection the information and knowledge from the people about how they react to their survey and what the majority answer given.  
+          p
+            | 
+          p
+            strong Login:
+            a.w3-button.w3-block.w3-black(href='/login') login
+          p
+            strong register:
+            a.w3-button.w3-block.w3-black(href='/register') register
+      // Menu Container
+     
+          
+      // Contact/Area Container
+      #where.w3-container(style='padding-bottom:32px;')
+        .w3-content(style='max-width:700px')
+          h5.w3-center.w3-padding-48
+            span.w3-tag.w3-wide WHERE TO GET HELP
+          p Leave your message here for any help.
+          form(action='/action_page.php' target='_blank')
+            p
+              input.w3-input.w3-padding-16.w3-border(type='text' placeholder='Name' required='' name='Name')
+            p
+              input.w3-input.w3-padding-16.w3-border(type='number' placeholder='Phone' required='' name='Phone')
+            p
+              input.w3-input.w3-padding-16.w3-border(type='mail' placeholder='E-mail' required='' name='mail')
+            p
+              input.w3-input.w3-padding-16.w3-border(type='text' placeholder='Message' required='' name='Message')
+            p
+              button.w3-button.w3-black(type='submit') SEND MESSAGE
+      // End page content
+   
+    
+    script.
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+

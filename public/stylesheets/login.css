@@ -52,16 +52,19 @@ button, input, select, textarea, optgroup {
 body > form:nth-child(9) {
     text-transform: uppercase;
     font-size: 20px;
+    text-align: center;
 }
 
 div.form-group:nth-child(1) > span:nth-child(1) {
     padding-right: 67px;
+    text-align: center;
 }
 
 
 
 div.form-group:nth-child(2) > span:nth-child(1) {
     padding-right: 26px;
+    text-align: center;
 }
 
 
@@ -71,8 +74,29 @@ div.form-group:nth-child(2) > span:nth-child(1) {
     background: whitesmoke;
     padding: 15px;
     width: 145px;
+    align-content: center;  
 }
 
+
+.form-group_settings p
+{ padding: 0 0 4px 0;
+text-align: center;
+}
+
+.form_settings span
+{ float: left; 
+  width: 200px; 
+  text-align: center;
+}
+
+<<<<<<< Updated upstream
 .form-group {
     text-align: center;
+=======
+
+
+input.contact{
+    padding: 20px;
+    width: 400px;
+>>>>>>> Stashed changes
 }

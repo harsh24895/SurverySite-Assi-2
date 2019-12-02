@@ -6,9 +6,9 @@ block content
         each survey in allSurvey
             form(method='post' action='/surveyResult/add')
                 div.form-control
-                    label(name='title') Title  #{survey.title}
+                    label(name='title') Title:  #{survey.title}
                 div.form-control
-                    label(name='description')  Description #{survey.description}
+                    label(name='description')  Description: #{survey.description}
                 div.form-control 
                     input(type='radio' name ='option')
                     |  Agree
